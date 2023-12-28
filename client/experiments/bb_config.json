@@ -1,0 +1,14 @@
+{
+    "host": "192.168.7.1",
+    "port": 54654,
+    "dev": "BeagleBone Black",
+    "use_button": true,
+
+    "distance": {
+        "activate": "P9_11",
+        "echo": "P9_41",
+        "trigger": "P9_16"
+    },
+
+    "echo_reply_led": "P9_12"
+}
