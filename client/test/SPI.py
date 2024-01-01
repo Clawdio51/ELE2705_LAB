@@ -3,7 +3,7 @@ import Adafruit_BBIO.SPI as SPI
 import time
 
 
-if True:
+if False:
     SPI_BUS = 0
     SPI_DEVICE = 0
     CS_PIN = "P9_15"
@@ -62,11 +62,11 @@ if True:
         print("Accelerometer orientation detection stopped.")
 
 else:
-    import board
+    import busio
     import adafruit_adxl34x
     
-    spi = board.SPI()
-    accelerometer = adafruit_adxl34x.ADXL343(spi)
+    i2c = busio.I2C("I2C2_SCL", "I2C2_SDA")
+    accelerometer = adafruit_adxl34x.ADXL343(i2c)
     while True:
         acceleration = accelerometer.acceleration
         print(acceleration)
