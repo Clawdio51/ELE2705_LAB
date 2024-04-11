@@ -7,6 +7,8 @@ def _choose_command_from_button(config):
     while True:
             if GPIO.input(config["distance"]["activate"]) == GPIO.HIGH:
                 return "distance"
+            elif GPIO.input(config["acceleration"]["activate"]) == GPIO.HIGH:
+                return "acceleration"
                 
 
 

@@ -5,6 +5,10 @@ def initialize_board(config):
     Initialize input and output pins on the microcontroller.
     """
 
+    # Acceleration
+    activate = config["acceleration"]["activate"]
+    GPIO.setup(activate, GPIO.IN, GPIO.PUD_DOWN)
+
     # Distance
     activate = config["distance"]["activate"]
     echo = config["distance"]["echo"]

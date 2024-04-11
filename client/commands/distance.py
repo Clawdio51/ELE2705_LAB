@@ -21,5 +21,6 @@ def distance(config):
     distance = round(duration * 17150, 2)
 
     data = "distance=" + str(distance) + "cm"
+    print(data)
     
     return {"status": STATUS_CODE.OK, "data": data}

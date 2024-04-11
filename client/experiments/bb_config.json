@@ -4,8 +4,15 @@
     "dev": "BeagleBone Black",
     "use_button": true,
 
-    "distance": {
+    "acceleration": {
         "activate": "P9_11",
+        "SCL": "I2C2_SCL",
+        "SDA": "I2C2_SDA"
+    },
+
+
+    "distance": {
+        "activate": "P9_23",
         "echo": "P9_41",
         "trigger": "P9_16"
     },

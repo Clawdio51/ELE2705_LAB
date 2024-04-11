@@ -1,7 +1,6 @@
 import socket
 import json
 import argparse
-import keyboard
 
 from utils.parse_response import parse_response
 
@@ -24,7 +23,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
 
 		# Echo response to client
 		s.sendto(f"Server Received: {addr}:{response}".encode(), addr)
-
-		if keyboard.is_pressed("q"):	# It gets stuck at recvfrom, so it never reaches here
-			break
 

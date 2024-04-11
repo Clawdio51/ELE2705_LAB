@@ -10,10 +10,10 @@ S_CONNECT_ADDRESS   = "192.168.7.1"
 S_CONNECT_PORT      = 12345
 
 # Forward to client
-C_LISTEN_ADDRESS    = "192.168.0.1"
-C_LISTEN_PORT       = 12345
-C_CONNECT_ADDRESS   = "192.168.7.2"
-C_CONNECT_PORT      = 54654
+# C_LISTEN_ADDRESS    = "192.168.0.1"
+# C_LISTEN_PORT       = 12345
+# C_CONNECT_ADDRESS   = "192.168.7.2"
+# C_CONNECT_PORT      = 54654
 
 def forward(listenaddress, listenport, connectaddress, connectport):
 
